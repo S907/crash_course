@@ -97,3 +97,81 @@ section{
      }
    
 }
+
+section.features-section{
+        background:#20272E;
+        color: white;
+}
+
+ul.features-list{
+  margin: 0;
+  padding-left: .1em;
+  // waiting for a grid
+li{
+  font-size: 1.1em;
+  margin-bottom: 1em;
+  margin-left: 2em;
+  position: relative;
+
+  &:before{
+    content: '';
+    left: -2em;
+    position:absolute;
+    width:20px;
+    height:20px;
+    background-image: url('../images/bullet.svg');
+    background-size: contain;
+    margin-right: .5em;
+  }
+}
+
+}
+
+.features-section img{
+  display:none;
+}
+
+.testimonials-section{
+  background: var(--primary-color);
+  color: white;
+
+  li{
+    background:#006BD6;
+    text-align:center;
+    padding: 2em 1em;
+    width:80%; 
+    margin: 0 auto 5em auto;
+    border-radius: 1em;
+    img{
+      width: 5em;
+      height: 5em;
+    }
+  }
+}
+h2{
+  font-size: 2em;
+}
+
+label{
+  display:block;
+  font-size: 1.2em;
+  margin-bottom: .8em;
+}
+
+input, textarea{
+  width: 100%;
+  padding: .8em;
+  margin-bottom: 1em;
+  border-radius: .3em;
+  border: 1px solid gray;
+  box-sizing:border-box;
+}
+
+input[type="submit"]{
+  background-color:  var(--primary-color);
+  color: white;
+  font-weight: bold;
+  font-size: 1.3em;
+  border:none;
+
+}
